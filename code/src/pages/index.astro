@@ -26,9 +26,14 @@ import tokyAvatar from '../assets/toky.jpg';
 			</section>
 			<section class="cta">
 				<a class="podcast-button" href="/blog">前往 Podcast</a>
-				<a class="youtube-link" href="https://www.youtube.com/@Tokystory" target="_blank">
-					YouTube 頻道 →
-				</a>
+				<div class="social-row">
+					<a class="youtube-link" href="https://www.youtube.com/@Tokystory" target="_blank">
+						YouTube 頻道 →
+					</a>
+					<a class="youtube-link" href="https://www.instagram.com/tokystory" target="_blank">
+						Instagram →
+					</a>
+				</div>
 			</section>
 		</main>
 		<Footer />
@@ -64,9 +69,13 @@ import tokyAvatar from '../assets/toky.jpg';
 		background: var(--accent-dark);
 		color: white;
 	}
-	.youtube-link {
-		display: block;
+	.social-row {
+		display: flex;
+		justify-content: center;
+		gap: 1.5em;
 		margin-top: 1em;
+	}
+	.youtube-link {
 		color: rgb(var(--gray));
 		text-decoration: none;
 	}

@@ -16,7 +16,15 @@ pubDate: '2026-08-24'
 
 下一集講怎麼用得更有效率：工作流、AI agent，從在網頁上打字問問題，到讓 AI 直接在你自己的電腦上處理檔案。
 
-<!-- TODO: 補 YouTube embed，等影片連結確定後貼上 -->
+<div style="position:relative;padding-top:56.25%;margin:1.5rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/toR60qU0Y6E"
+    title="我爸媽不是不需要 AI，是不知道 AI 能幹嘛"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerated-video-playback; encrypted-media; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## 本集重點
 
