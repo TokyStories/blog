@@ -1,8 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import tokyAvatar from '../assets/toky.jpg';
 ---
 
 <!doctype html>
@@ -14,6 +16,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<section class="hero">
+				<Image class="avatar" src={tokyAvatar} width={160} height={160} alt="托奇" />
 				<h1>一人 AI 工作室,把重複的事教給 AI 做</h1>
 				<p>
 					我是托奇,一人 AI 工作室。剪片、寫文件、做簡報這些事,我不是丟一句話問 AI
@@ -35,6 +38,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 <style>
 	.hero {
 		margin-bottom: 2em;
+	}
+	.avatar {
+		display: block;
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		object-fit: cover;
+		margin: 0 auto 1.5em;
 	}
 	.cta {
 		text-align: center;
