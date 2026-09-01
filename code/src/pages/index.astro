@@ -23,6 +23,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			</section>
 			<section class="cta">
 				<a class="podcast-button" href="/blog">前往 Podcast</a>
+				<a class="youtube-link" href="https://www.youtube.com/@Tokystory" target="_blank">
+					YouTube 頻道 →
+				</a>
 			</section>
 		</main>
 		<Footer />
@@ -49,5 +52,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	.podcast-button:hover {
 		background: var(--accent-dark);
 		color: white;
+	}
+	.youtube-link {
+		display: block;
+		margin-top: 1em;
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	.youtube-link:hover {
+		color: var(--accent);
 	}
 </style>
