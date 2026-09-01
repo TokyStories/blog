@@ -5,29 +5,33 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--accent: #d62828;
+	--accent-dark: #a81f1f;
+	--black: 31, 31, 31;
+	--gray: 122, 117, 110;
+	--gray-light: 235, 230, 221;
+	--gray-dark: 74, 69, 62;
+	--bg: 247, 245, 240;
+	--gray-gradient: rgba(var(--gray-light), 60%), rgb(var(--bg));
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 2px 6px rgba(var(--gray), 20%), 0 8px 24px rgba(var(--gray), 25%),
+		0 16px 32px rgba(var(--gray), 25%);
 }
 body {
 	font-family: var(--font-atkinson);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background-color: rgb(var(--bg));
+	background-image: linear-gradient(var(--gray-gradient));
+	background-repeat: no-repeat;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
-	line-height: 1.7;
+	line-height: 1.75;
+	letter-spacing: 0.01em;
 }
 main {
 	width: 720px;
@@ -44,6 +48,7 @@ h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
+	letter-spacing: -0.01em;
 }
 h1 {
 	font-size: 3.052em;
